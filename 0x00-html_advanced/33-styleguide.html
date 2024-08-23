@@ -4,101 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styleguide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Styleguide</h1>
     </header>
+    
     <main>
-        <!-- Lists section -->
-        <section>
-            <header>
-                <h2>Lists</h2>
-            </header>
-            <div>
-                <header>
-                    <h3>Unordered</h3>
-                </header>
-                <ul>
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Sagittis adipiscing lorem eleifend.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                </ul>
-            </div>
-            <div>
-                <header>
-                    <h3>Ordered</h3>
-                </header>
-                <ol>
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Sagittis adipiscing lorem eleifend.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                </ol>
-            </div>
-            <div>
-                <header>
-                    <h3>Definition</h3>
-                </header>
-                <dl>
-                    <dt>Term: Definition List title</dt>
-                    <dd>Definition: Definition text.</dd>
-                    <dt>Term: Startup</dt>
-                    <dd>Definition: A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.</dd>
-                    <dt>Term: Water</dt>
-                    <dd>Definition: A colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.</dd>
-                </dl>
-            </div>
-        </section>
-
-        <!-- Horizontal rule section -->
-        <section>
-            <header>
-                <h2>Horizontal rule</h2>
-            </header>
-            <div>
-                <hr>
-            </div>
-        </section>
-
         <!-- Blockquotes section -->
-        <section>
+        <section id="blockquotes">
             <header>
                 <h2>Blockquotes</h2>
             </header>
             <div>
-                <header>
-                    <h3>Inline quote</h3>
-                </header>
-                <blockquote>
-                    Stay hungry. Stay foolish.
-                </blockquote>
+                <h3>Inline quote</h3>
+                <blockquote>Stay hungry. Stay foolish.</blockquote>
             </div>
             <div>
-                <header>
-                    <h3>Blockquote</h3>
-                </header>
+                <h3>Blockquote</h3>
                 <blockquote>
                     I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
-                    <cite>Kanye West, Musician</cite>
                 </blockquote>
+                <cite>Kanye West, Musician</cite>
             </div>
         </section>
-
+        
         <!-- Typography section -->
-        <section>
+        <!-- Typography -->
+        <section id="typography">
             <header>
                 <h2>Typography</h2>
             </header>
             <div>
-                320 Stewart Avenue, Unit 12<br>
-                New York City<br>
-                NY 10001
+                <address>
+                    320 Stewart Avenue, Unit 12<br>
+                    New York City NY 10001
+                </address>
             </div>
             <div>
                 <pre><code>
-<h2>My title</h2>
-<p>Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero. Aenean hendrerit ultrices nulla ac lobortis. Vestibulum consectetur nibh vel ante rhoncus faucibus.</p>
+&lt;h2&gt;My title&lt;/h2&gt;
+&lt;p&gt;Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero. Aenean hendrerit ultrices nulla ac lobortis. Vestibulum consectetur nibh vel ante rhoncus faucibus.&lt;/p&gt;
                 </code></pre>
             </div>
             <div>
@@ -107,41 +54,43 @@
         </section>
 
         <!-- Table section -->
-        <section>
-            <!-- Table -->
+        <!-- Table -->
+        <section id="table">
             <header>
                 <h2>Table</h2>
             </header>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Title</th>
-                            <th scope="col">Director</th>
-                            <th scope="col">Release Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Inception</th>
-                            <td>Christopher Nolan</td>
-                            <td>2010</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">The Matrix</th>
-                            <td>The Wachowskis</td>
-                            <td>1999</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Interstellar</th>
-                            <td>Christopher Nolan</td>
-                            <td>2014</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Director</th>
+                        <th scope="col">Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">The Shawshank Redemption</th>
+                        <td>Frank Darabont</td>
+                        <td>1994-09-23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Godfather</th>
+                        <td>Francis Ford Coppola</td>
+                        <td>1972-03-24</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Dark Knight</th>
+                        <td>Christopher Nolan</td>
+                        <td>2008-07-18</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
+
+    <footer>
+        <p>© 2024 Techium. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
