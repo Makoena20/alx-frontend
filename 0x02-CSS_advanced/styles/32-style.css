@@ -1,0 +1,43 @@
+/* Define custom properties for transitions */
+:root {
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Add transformations on card-work */
+
+/* Scale transform on card-image when card-work is hovered */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+}
+
+/* Scale transform on card-outer when card-work is hovered */
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+/* Add animations on navigation items */
+
+/* Transition for nav-link pseudo-element */
+.nav .nav-link::before {
+  transition: all var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Animate button background */
+.button:hover {
+  transition: background-color var(--transition-duration), color var(--transition-duration); /* Animate background and color */
+}
+
+/* Add transitions on card-work */
+
+/* Transition for card-image inside card-work on hover */
+.card-work:hover .card-image {
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+}
+
+/* Transition for card-inner inside card-work on hover */
+.card-work:hover .card-inner {
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier); /* Add transition */
+}
+
