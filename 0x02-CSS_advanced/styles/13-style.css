@@ -1,0 +1,102 @@
+/* Task: Style anchor elements for different states */
+
+/* Define custom properties on the root element */
+:root {
+  --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+  --section-header-align: center;
+  --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+}
+
+/* Set the font size of the html element to 62.5% of its normal size */
+html {
+  font-size: 62.5%;
+}
+
+/* Set the body’s font size, font weight, and line height */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+  line-height: var(--line-height-base);
+}
+
+/* Set the font-family and font weight for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Set the horizontal alignment for section-header */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* Set the font-family, text transformation, and font weight for section-tagline */
+.section-tagline {
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+/* Set the font-family, font size, font weight, margin, and color for section-title */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
+/* Style anchor elements containing a hyperlink */
+a[href] {
+  color: var(--text-color);
+  text-decoration: none; /* Remove underline and other decorations */
+  font-style: normal; /* Ensure normal font style by default */
+}
+
+/* Style visited state of anchor elements */
+a[href]:visited {
+  font-style: italic; /* Italicize visited links */
+}
+
+/* Style hover state of anchor elements */
+a[href]:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style active state of anchor elements */
+a[href]:active {
+  background-color: var(--color-light-grey); /* Set background color for active state */
+}
+
+/* Hide elements with the class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set the color of elements with the class card-category to color-primary */
+.card-category {
+  color: var(--color-primary);
+}
+

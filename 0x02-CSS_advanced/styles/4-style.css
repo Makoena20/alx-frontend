@@ -1,0 +1,45 @@
+/* Task: Define custom font-family properties and update existing declarations */
+
+/* Define custom font-family properties on the root element */
+:root {
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* Set the font-family for the body to font-family-base */
+body {
+  font-family: var(--font-family-base);
+  color: var(--text-color);
+}
+
+/* Set the font-family for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Set the color of all anchor elements to text-color */
+a {
+  color: var(--text-color);
+}
+
+/* Hide elements with the class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set the color of elements with the class card-category to color-primary */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Set the color of elements with the class section-tagline to color-primary */
+.section-tagline {
+  color: var(--color-primary);
+}
+
