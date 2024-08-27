@@ -1,0 +1,7 @@
+/* Task: Ensure fluid scrolling behavior on the html element */
+
+/* Enable smooth scrolling on the html element */
+html {
+  scroll-behavior: smooth;
+}
+
