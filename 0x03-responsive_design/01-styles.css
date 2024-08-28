@@ -1,0 +1,40 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.section-hero {
+    background-image: url('path-to-your-hero-image.jpg');
+    background-position: 65% 8rem; /* Updated value */
+    background-size: 90rem auto;   /* Updated value */
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.section-hero .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 35vh; /* Updated value */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-hero p {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 600px;
+}
+

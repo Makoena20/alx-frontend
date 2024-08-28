@@ -1,0 +1,40 @@
+/* Targeting the .menu-icon class inside the header class */
+header .menu-icon {
+    cursor: pointer;
+    padding: 2.5rem;
+    position: relative;
+    user-select: none;
+}
+
+/* Targeting the .navicon class inside .menu-icon inside the header */
+header .menu-icon .navicon {
+    background: var(--color-white); /* Use the color-white variable */
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+/* Targeting the ::before and ::after pseudo-elements of .navicon */
+header .menu-icon .navicon::before,
+header .menu-icon .navicon::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-white); /* Use the color-white variable */
+    transition: all 0.2s ease-out;
+}
+
+/* Targeting only the ::before pseudo-element of .navicon */
+header .menu-icon .navicon::before {
+    top: 0.7rem;
+}
+
+/* Targeting only the ::after pseudo-element of .navicon */
+header .menu-icon .navicon::after {
+    top: -0.7rem;
+}
+

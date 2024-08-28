@@ -1,0 +1,10 @@
+/* Section HERO section */
+
+/* Target section-hero class inside article-page class */
+.article-page .section-hero {
+    margin-top: -8.5rem; /* Adjust margin-top */
+    padding-top: 5rem; /* Adjust padding-top */
+}
+
+/* Existing media queries and other CSS rules */
+

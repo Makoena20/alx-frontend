@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Helpers */
+main img {
+    width: 100%; /* New property */
+    height: auto; /* New property */
+}
+
+/* Navbar */
+.navbar-menu {
+    /* Other navbar styles */
+}
+
+@media (max-width: 767px) {
+    .navbar-menu {
+        display: none; /* Hide navbar on small screens */
+    }
+}
+
+/* Section Latest News */
+.section-latest-news .row {
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+}
+
+@media (max-width: 767px) {
+    .section-latest-news .row {
+        flex-direction: column; /* Stack the news items on smaller screens */
+    }
+}
+
+/* Grid */
+.grid ul.row {
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+}
+
+.grid ul.row .col-1-3,
+.grid ul.row .col-1-2 {
+    margin: 0; /* Default for larger screens */
+}
+
+.grid ul.row .col-1-3 {
+    width: calc(33.33% - 2rem); /* Default for larger screens */
+}
+
+.grid ul.row .col-1-2 {
+    width: calc(50% - 2rem); /* Default for larger screens */
+}
+
+@media (max-width: 767px) {
+    :root {
+        --section-padding: 5rem 1.5rem; /* Redefined variable */
+        --section-body-padding: 2rem 0 0; /* Redefined variable */
+    }
+
+    .grid ul.row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        margin: 0; /* Remove extra margin on smaller screens */
+    }
+
+    .grid ul.row .col-1-3,
+    .grid ul.row .col-1-2 {
+        margin: 0 0 3rem 0; /* Add margin below each column */
+        width: 100%; /* Make columns full-width on smaller screens */
+    }
+}
+
